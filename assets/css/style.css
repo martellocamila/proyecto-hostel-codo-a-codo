@@ -1,0 +1,22 @@
+@import url(./header.css);
+@import url(./main.css);
+
+:root {
+    --color-azul-oscuro: #153448;
+    --color-azul-claro: #3C5B6F;
+    --color-gris: #948979;
+    --color-marron-claro: #DFD0B8;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-gris);
+    font-family: 'Roboto';
+}
+
+
+
