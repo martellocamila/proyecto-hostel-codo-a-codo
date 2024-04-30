@@ -6,6 +6,7 @@
     --color-azul-claro: #3C5B6F;
     --color-gris: #948979;
     --color-marron-claro: #DFD0B8;
+    --color-manteca: #EAE7E0; 
 }
 
 * {
@@ -14,7 +15,6 @@
 }
 
 body {
-    background-color: var(--color-gris);
     font-family: 'Roboto';
 }
 

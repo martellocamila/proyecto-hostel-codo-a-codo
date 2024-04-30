@@ -1,8 +1,8 @@
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: var(--color-marron-claro);
+    background-color: var(--color-manteca);
 }
 
 .nav-bar ul {
@@ -10,15 +10,13 @@ header {
     list-style-type: none;
     gap: 15px;
     font-size: 20px;
-    margin-right: 70px;
 }
 
-.nav-bar ul a{
+.nav-bar ul a {
     text-decoration: none;
-    color: black;
+    color: var(--color-azul-oscuro);
 }
 
 .img-logo {
-    width: 130px;
-    margin-left: 20px;
+    width: 120px;
 }

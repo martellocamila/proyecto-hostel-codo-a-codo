@@ -1,13 +1,22 @@
-.img-container {
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
     width: 100%;
+}
+
+.img-container {
     height: 550px;
     background-image: url(/assets/img/foto-bariloche.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     font-size: 25px;
+    color: var(--color-manteca);
 }
 
 .img-container h1 {
@@ -20,12 +29,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    padding: 30px;
+    padding: 50px;
     text-align:center;
+    background-color: var(--color-manteca);
+    color: var(--color-azul-claro);
 }
 
 .sobre-nosotros h2 {
     letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.carousel {
+    background-color: var(--color-azul-claro);
+    color: var(--color-manteca);
+}
+
+.opiniones {
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.opinion {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
