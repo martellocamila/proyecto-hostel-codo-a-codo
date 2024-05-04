@@ -1,16 +1,16 @@
 @import url(./header.css);
 @import url(./main.css);
+@import url(./footer.css);
 
 :root {
     --color-azul-oscuro: #153448;
     --color-azul-claro: #3C5B6F;
-    --color-gris: #948979;
-    --color-marron-claro: #DFD0B8;
     --color-manteca: #EAE7E0; 
 }
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
