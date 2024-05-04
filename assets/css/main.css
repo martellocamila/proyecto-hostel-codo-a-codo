@@ -17,6 +17,45 @@ main {
     align-items: center;
     font-size: 25px;
     color: var(--color-manteca);
+    position: relative;
+}
+
+.habitacion-fecha{
+    display: flex;
+    box-sizing: border-box;
+    position:absolute;
+    top: 10px;
+    justify-content:flex-end;
+    border-radius: 32px;
+    width: 600px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.habitacion-fecha label{
+    display: flex;
+    flex-grow: 1;
+}
+
+.huespedes, .entrada, .salida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 3px;
+    background-color: white;
+    color: black;
+    height: 60px;
+    margin: 5px;
+    border-radius: 32px;
+    cursor: pointer;
+
+}
+
+.huespedes:hover, .entrada:hover, .salida:hover{
+    background-color: rgb(212, 207, 207);
+    border: 1px var(--color-gris) solid;
 }
 
 .img-container h1 {
