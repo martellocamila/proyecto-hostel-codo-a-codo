@@ -37,16 +37,12 @@ main {
     color: var(--color-azul-claro);
     display: flex;
     flex-grow: 1;
-}
-
-.huespedes, .entrada, .salida{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 15px;
     font-weight: 3px;
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     height: 60px;
     margin: 5px;
@@ -58,6 +54,14 @@ main {
     background-color: rgb(212, 207, 207);
     border: 1px var(--color-gris) solid;
 }
+
+.flatpickr:hover {
+    /* background-color:rgb(212, 207, 207); */
+    border: none;
+    
+
+}
+
 
 .img-container h1 {
     margin-bottom: 10px;
