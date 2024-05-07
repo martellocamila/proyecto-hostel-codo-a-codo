@@ -1,6 +1,7 @@
 footer {
     background-color: var(--color-manteca);
     color: var(--color-azul-claro);
+    width: 100%;
 }
 
 .footer-container {

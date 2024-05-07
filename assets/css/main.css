@@ -52,7 +52,6 @@ main {
     margin: 5px;
     border-radius: 32px;
     cursor: pointer;
-
 }
 
 .huespedes:hover, .entrada:hover, .salida:hover{
