@@ -24,7 +24,7 @@ main {
     display: flex;
     box-sizing: border-box;
     position:absolute;
-    top: 50px;
+    top: 10px;
     justify-content:flex-end;
     border-radius: 32px;
     width: 600px;
@@ -32,9 +32,7 @@ main {
     margin-top: 30px;
 }
 
-.habitacion-fecha label{
-    background-color: var(--color-manteca);
-    color: var(--color-azul-claro);
+.habitacion-fecha .entrada, .salida, .huespedes{
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -50,8 +48,123 @@ main {
     cursor: pointer;
 }
 
-.huespedes:hover, .entrada:hover, .salida:hover{
-    background-color: rgb(212, 207, 207);
+.flatpickr {
+
+        width: 100px;
+        border: 0px;
+        text-align: center;
+        background-color: whitesmoke;
+        cursor: pointer;
+
+}
+
+.habitacion-fecha > .huespedes {
+        display: grid;
+        grid-template-columns: repeat(0.5fr 1fr 1fr);
+        grid-template-rows: 30px 30px;
+        width: 100px;
+        grid-template-areas:
+        "a a a e"
+        "b c d e";
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        color: black;
+        height: 60px;
+        margin: 5px;
+        border-radius: 32px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 3px;
+        cursor: pointer;
+
+      }
+      .label_cantidad {
+        grid-area: a;
+        text-align: center;
+        
+      }
+      .disminuir{
+        grid-area: b;
+        width: 25px;
+        border-radius: 5px;
+        border: none;
+        background-color: whitesmoke;
+    }
+
+    .cantidadHuespedes{
+        grid-area: c;
+        text-align: center;
+        box-sizing: content-box;
+    }
+
+    .aumentar{
+        grid-area: d;
+        width: 25px;
+        border-radius: 5px;
+        border: none;
+        background-color: whitesmoke;
+    }
+
+    .buscar{
+        grid-area: e;
+        background-color: whitesmoke;
+        width: 12px;
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        border-radius: 50%;
+        padding: 0;
+        align-items:self-end;
+        aspect-ratio: 1;
+        border: none;
+    }
+
+    .buscar > .material-symbols-outlined{
+        width: 30px;
+        aspect-ratio: 1;
+        border: white;
+        border-radius: 50%;
+        background-color: #ff385c;
+        font-size: 30px;
+        font-variation-settings:
+            'FILL' none,
+            'wght' 500,
+            'GRAD' 0,
+            'opsz' 24
+    }
+
+    .huespedes > .input_cantidad{
+        border-radius: 15px;
+        border: none;
+        text-align: center;
+        width: 50px;
+        background: none;  
+        
+    }
+
+    /*----------------------------------
+     Para ocultar las flechas de incremento y decremento de un input de tipo "number"  */
+   
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+    
+    /* ------------------------------------- */
+
+.entrada:hover, .salida:hover {
+
+    border: 1px var(--color-gris) solid;
+}
+
+/* Se le sacan los efectos que tiene la etiqueta input */
+input:focus {
+    outline: none;
+  }
+
+.huespedes:hover{
+    /* background: none; */
     border: 1px var(--color-gris) solid;
 }
 
@@ -102,4 +215,6 @@ main {
     align-items: center;
     text-align: center;
 }
+
+
 
