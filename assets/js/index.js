@@ -1,4 +1,3 @@
-
 // Metodo para agregar calendario
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -14,8 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
       dateFormat: "Y-m-d", // Elegir el formato de fecha deseado
     });
   });
-
-
 
 //Metodo para incrementar la cantidad de Huespedes
 

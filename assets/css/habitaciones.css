@@ -1,1 +1,45 @@
+.habitaciones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: var(--color-azul-claro);
+}
 
+.habitacion-container {
+    /* ver flex basis para el responsive */
+    width: 85%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-manteca);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: var(--color-azul-claro);
+}
+
+.habitacion-container img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.info-habitacion-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.info-habitacion-container .reservar {
+    align-self: flex-start;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: var(--color-azul-claro);
+    color: var(--color-manteca);
+    border: none;
+    
+}
+
+.info-habitacion-container h3 {
+    text-transform: capitalize;
+}
