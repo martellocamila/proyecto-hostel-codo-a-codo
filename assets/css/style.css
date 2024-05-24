@@ -2,6 +2,7 @@
 @import url(./main.css);
 @import url(./footer.css);
 @import url(./habitaciones.css);
+@import url(./ubicacion.css);
 @import url(./contacto.css);
 
 :root {
@@ -21,5 +22,14 @@ body {
     overflow-x: hidden;
 }
 
+
+.whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
 
 

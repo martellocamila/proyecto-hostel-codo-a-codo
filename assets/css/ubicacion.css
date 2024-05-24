@@ -1,0 +1,53 @@
+.titulo-turismo {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.titulo-turismo h4 {
+    color: #0066cc;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.turismo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.turismo p {
+    margin: 0;
+}
+
+.turismo b {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.turismo img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.informacion-gente{
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.informaciones{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
