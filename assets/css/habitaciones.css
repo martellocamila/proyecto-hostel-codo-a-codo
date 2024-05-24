@@ -8,13 +8,13 @@
 }
 
 .habitacion-container {
-    /* ver flex basis para el responsive */
     width: 85%;
     padding: 20px;
     border-radius: 10px;
     background-color: var(--color-manteca);
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     gap: 20px;
     color: var(--color-azul-claro);
 }
@@ -42,4 +42,14 @@
 
 .info-habitacion-container h3 {
     text-transform: capitalize;
+}
+
+@media screen and (max-width: 1140px) {
+    .habitacion-container {
+        flex-wrap: wrap;
+    }
+
+    .habitacion-container img {
+        min-width: 100%;
+    }
 }

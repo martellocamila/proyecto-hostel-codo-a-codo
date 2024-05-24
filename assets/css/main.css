@@ -6,10 +6,21 @@ main {
 
 .hero {
     width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    height: 550px;
+    background-image: url(/assets/img/foto-bariloche.jpg);
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 1.5em;
+    color: var(--color-manteca);
+    /* position: relative; */
 }
 
-.img-container {
-    height: 550px;
+ .img-container {
+    /* height: 550px;
     background-image: url(/assets/img/foto-bariloche.jpg);
     display: flex;
     flex-direction: column;
@@ -17,19 +28,25 @@ main {
     align-items: center;
     font-size: 25px;
     color: var(--color-manteca);
-    position: relative;
-}
+    position: relative; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+} 
 
 .habitacion-fecha {
     display: flex;
     box-sizing: border-box;
-    position: absolute;
-    top: 10px;
-    justify-content: flex-end;
-    border-radius: 32px;
-    width: 600px;
-    height: 50px;
-    margin-top: 30px;
+    /* position: absolute; */
+    /* top: 10px; */
+    /* border-radius: 32px; */
+    /* width: 600px; */
+    width: 50%;
+    /* height: 50px; */
+    /* margin-top: 30px; */
 }
 
 .habitacion-fecha .entrada,
@@ -52,7 +69,7 @@ main {
 
 .flatpickr {
 
-    width: 100px;
+    /* width: 100px; */
     border: 0px;
     text-align: center;
     background-color: whitesmoke;
@@ -180,11 +197,14 @@ input:focus {
 
 }
 
-
 .img-container h1 {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.img-container h1, .img-container p {
+    text-align: center;
 }
 
 .sobre-nosotros {
@@ -219,4 +239,12 @@ input:focus {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+@media screen and (max-width: 612px) {
+    .habitacion-fecha {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

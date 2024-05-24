@@ -2,6 +2,7 @@
 @import url(./main.css);
 @import url(./footer.css);
 @import url(./habitaciones.css);
+@import url(./contacto.css);
 
 :root {
     --color-azul-oscuro: #153448;
@@ -17,6 +18,7 @@
 
 body {
     font-family: 'Roboto';
+    overflow-x: hidden;
 }
 
 

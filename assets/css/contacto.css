@@ -1,0 +1,43 @@
+.form-container {
+    background-color: var(--color-azul-claro);
+    display: flex;
+    justify-content: center;
+}
+
+.form-container-2 {
+    background-color: var(--color-manteca);
+    color: var(--color-azul-claro);
+    margin: 20px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+form input, form select {
+    padding: 2px;
+}
+
+form select {
+    color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form textarea {
+    padding: 2px;
+    resize: none;
+    width: 100%;
+}
+
+.pregunta-huesped legend {
+    font-size: 1.2em;
+}
+
+.pregunta-huesped label{
+    display: block;
+}
