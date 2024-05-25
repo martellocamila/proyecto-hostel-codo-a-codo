@@ -31,7 +31,7 @@
 
     <div class="form-container">
         <div class="form-container-2">
-            <form>
+            <form id="formulario" novalidate>
                 <fieldset>
                     <label for="nombre">Nombre:</label><br>
                     <input type="text" id="nombre" name="nombre" required>
@@ -45,8 +45,6 @@
                 <fieldset class="pregunta-huesped">
                     <legend>Te has hospedado alguna vez en nuestro hotel?</legend>
                     <label><input type="radio" name="huesped" id="si" value="si">Si, ya me he hospedado.</label>
-                    <!-- <label for="si">Si, ya me he hospedado.</label> -->
-                    <!-- <label for="no">No, es la primera vez.</label> -->
                     <label><input type="radio" name="huesped" id="no" value="no">No, es la primera vez.</label>
                 </fieldset>
                 
@@ -57,13 +55,13 @@
                 
                 <fieldset>
                     <label for="correo">Confirmación de Correo electrónico:</label><br>
-                    <input type="email" id="correo" name="correo" required placeholder="correo@correo.com">
+                    <input type="email" id="confirmacion-correo" name="confirmacion-correo" required placeholder="correo@correo.com">
                 </fieldset>
 
                 <fieldset>
                     <label for="asunto">Asunto del Correo:</label>
                     <select name="asunto" id="asunto">
-                        <option selected disabled>Seleccione una opcion</option>
+                        <option selected disabled value="0">Seleccione una opcion</option>
                         <option value="1">Ayuda</option>
                         <option value="2">Mas Informacion</option>
                         <option value="3">Reservas</option>
@@ -76,7 +74,7 @@
                     <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escriba su mensaje aqui..."></textarea>
                 </fieldset>
                     
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" id="submit">
             </form>
         </div>
     </div>
@@ -96,5 +94,7 @@
             </section>
         </div>
     </footer>
+
+    <script src="/assets/js/contacto.js"></script>
 
 </body>

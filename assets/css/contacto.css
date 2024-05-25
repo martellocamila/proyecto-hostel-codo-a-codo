@@ -11,6 +11,7 @@
     padding: 30px 50px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     border-radius: 5px;
 }
 
@@ -20,6 +21,10 @@ form input, form select {
 
 form select {
     color: gray;
+}
+
+form #correo, form #confirmacion-correo {
+    width: 70%;
 }
 
 form {
@@ -40,4 +45,10 @@ form textarea {
 
 .pregunta-huesped label{
     display: block;
+}
+
+.alerta {
+    color: var(--color-manteca); 
+    background-color: var(--color-azul-claro);
+    margin-top: 5px;
 }
